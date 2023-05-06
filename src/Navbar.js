@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -9,11 +11,11 @@ const Navbar = () => {
           padding: ".5rem",
         }}
       >
-        The Zig Blog
+        The_Zig_Blog
       </h1>
       <div className="links">
-        <a href="/">Home</a>
-        <a href="/create">New Blog</a>
+        <Link to="/">Home</Link>
+        <Link to="/create">New Blog</Link>
       </div>
     </nav>
   );
